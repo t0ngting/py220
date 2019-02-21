@@ -1,3 +1,4 @@
+#221上課內容
 a=1;b=2;c=3;d=4
 math=[1,2,3,4]
 math.append(5)#尾巴加5
@@ -21,3 +22,17 @@ print(grade[2])
 print(sum(grade[0])/len(grade[0]),sum(grade[1])/len(grade[1]),sum(grade[2])/len(grade[2]))
 grade.insert(3,[94,90,96])
 print(grade)
+print('-------------------------------------------------------------')
+tuple=(7,8,9)#與LIST不#同數不能修改
+print(tuple.index(8))#找8在tuple的索引 ##與LIST用法不同
+#unpacking
+tupledata=(0,1,2)
+x,y,z=tupledata
+print(x,y,z)
+#實作2
+tuplegrade=((5,14,7),(23,36,28),(88,80,92))
+chineses,english,maths=tuplegrade
+print(maths)
+print(sum(chineses)/len(tuplegrade[0]),sum(english)/len(english),sum(maths)/len(maths))
+tuplegrade2=((94,90,96),)
+print(tuplegrade+tuplegrade2)
